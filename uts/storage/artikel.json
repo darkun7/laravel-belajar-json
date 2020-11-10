@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "judul": "judul",
+        "penulis": "saya",
+        "img": "https:\/\/laravel.com\/img\/logotype.min.svg",
+        "konten": "isinya",
+        "created": "10-11-2020",
+        "updated": null
+    },
+    {
+        "id": 2,
+        "judul": "adadadadad",
+        "penulis": "adad",
+        "img": "https:\/\/laravel.com\/img\/logotype.min.svg",
+        "konten": "adad",
+        "created": "10-11-2020",
+        "updated": null
+    }
+]
