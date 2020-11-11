@@ -16,7 +16,7 @@
             </div>
             <div class="form-group">
               <label for="image">URL Gambar</label>
-              <input id="img" type="text" name="img" class="form-control" placeholder="URL Penulis">
+              <input id="img" type="text" name="img" class="form-control" placeholder="URL gambar">
             </div>
             <div class="form-group">
               <label for="konten">Konten Artikel</label>

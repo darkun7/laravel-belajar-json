@@ -46,7 +46,7 @@
     <div class="" id="master-wrapper">
       <div class="preloader">
           <div class="preloader-img">
-              <span class="loading-animation animate-flicker"><img src="assets/images/loading.gif" alt="loading" /></span>
+              <span class="loading-animation animate-flicker"><img src="{{ asset('assets/images/loading.gif') }}" alt="loading" /></span>
           </div>
       </div>
 

@@ -34,16 +34,21 @@
                                             <div class="col-sm-4 masonry-portfolio-item mb30 apps">
                                                 <div class="hover-effect smoothie">
                                                     <a href="#" class="smoothie">
-                                                    <img src="assets/images/portfolio/folio-1.jpeg" alt="Image" class="img-responsive smoothie"></a>
+                                                    <img src="{{$konten['img']}}" alt="Image" class="img-responsive smoothie" style="min-height:250px"></a>
                                                     <div class="hover-overlay smoothie text-center">
                                                         <div class="vertical-align-bottom">
-                                                            <h4>Bespoke Envelope Design</h4>
+                                                            <h4>{{ $konten['judul'] }}</h4>
                                                         </div>
                                                     </div>
                                                     <div class="hover-caption dark-overlay smoothie text-center">
                                                         <div class="vertical-align-bottom">
-                                                            <a href="single-portfolio.html" class="btn btn-primary mb20">View Details <i class="fa fa-angle-right smoothie"></i></a>
-                                                            <a href="assets/images/portfolio/folio-1.jpeg" class="lb-link btn btn-primary mb20">View Image <i class="fa fa-plus smoothie"></i></a>
+                                                            <a href="{{ route('artikel.show', $konten['id']) }}" class="btn btn-primary mb20">View Details <i class="fa fa-angle-right smoothie"></i></a>
+                                                            <a href="{{$konten['img']}}" class="lb-link btn btn-primary mb20">View Image <i class="fa fa-plus smoothie"></i></a>
+                                                            <form class="" action="{{ route('artikel.destroy', $konten['id']) }}" method="post">
+                                                              @csrf
+                                                              @method('delete')
+                                                              <button type="submit" class="btn btn-danger">Hapus</button>
+                                                            </form>
                                                         </div>
                                                     </div>
                                                 </div>
